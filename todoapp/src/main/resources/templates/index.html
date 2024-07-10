@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link  th:href="@{/css/index.css}" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>TodoApp</title>
+</head>
+<body>
+    <h1>Todoアプリ</h1>
+
+    <form method="post" th:action="@{/todolist}">
+        <p>
+            <label>名前を入力してください。</label>
+        </p>
+        <p>
+            <input type="text" name="name" id="name">
+            <input type="submit" value="送信" >
+        </p>
+    </form>
+</body>
+</html>
+
